@@ -1,0 +1,28 @@
+---
+
+# Generic
+generic:
+  role: ansible-role-azure_cli
+  role_short: azure_cli
+  role_description: |
+    Installs the azure cli on a variety of platforms
+  collections: []
+
+# Platforms
+platforms:
+  rhel7:
+    ci: false
+    supported: false
+  centos7:
+    ci: false
+    supported: false
+
+# Molecule
+molecule:
+  requirements:
+    roles_extra: []
+  prepare:
+    vars:
+      activate_epel: true
+      install_python: true
+      install_python38: true
