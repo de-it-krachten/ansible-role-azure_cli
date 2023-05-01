@@ -4,18 +4,22 @@
   ansible.builtin.rpm_key:
     state: present
     key: https://packages.microsoft.com/keys/microsoft.asc
+  become: yes
 
 - name: Setup microsoft YUM repository
   ansible.builtin.dnf:
     name: https://packages.microsoft.com/config/fedora/{{ ansible_distribution_major_version }}/packages-microsoft-prod.rpm
     state: present
+  become: yes
 
 - name: Upgrade pyOpenSSL from pypi
   ansible.builtin.pip:
     name: "pyOpenSSL>22.1.0"
     state: present
+  become: yes
 
 - name: Install azure-cli
   ansible.builtin.dnf:
     name: azure-cli
     state: present
+  become: yes
