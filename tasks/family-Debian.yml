@@ -5,14 +5,17 @@
     state: present
     url: https://packages.microsoft.com/keys/microsoft.asc
     keyring: /etc/apt/trusted.gpg.d/microsoft.gpg
+  become: yes
 
 - name: Setup Microsoft APT repository
   ansible.builtin.apt_repository:
     filename: microsoft
     repo: "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ {{ ansible_distribution_release }} main"
     state: present
+  become: yes
 
 - name: Install azure-cli
   ansible.builtin.apt:
     name: azure-cli
     state: present
+  become: yes
