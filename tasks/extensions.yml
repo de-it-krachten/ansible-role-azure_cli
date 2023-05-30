@@ -1,0 +1,27 @@
+---
+
+- name: Get list of installed extensions
+  ansible.builtin.command: >-
+    az extension list
+  become: false
+  changed_when: false
+  check_mode: false
+  register: __az_installed
+
+- name: Xxx
+  ansible.builtin.debug:
+    msg: "{{ __az_installed.stdout | from_json | json_query('[].name') }}"
+
+- name: Install azure-cli extensions
+  ansible.builtin.command: >-
+    az extension add
+    --name {{ item.name }}
+    {{ ('--version ' + item.version) if (item.version | default(False)) else '' }}
+    {{ '--system' if (item.system | default(False)) else '' }}
+  become: "{{ True if (item.system | default(False)) else False }}"
+  changed_when: true
+  loop: "{{ azure_cli_extensions }}"
+  loop_control:
+    label:
+      - "{{ item.name }}"
+  when: item.name not in (__az_installed.stdout | from_json | json_query('[].name'))

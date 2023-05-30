@@ -6,3 +6,7 @@
   with_first_found:
     - "{{ ansible_distribution }}.yml"
     - "family-{{ ansible_os_family }}.yml"
+
+- name: Install extensions
+  ansible.builtin.include_tasks:
+    file: extensions.yml

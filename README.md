@@ -41,7 +41,8 @@ Note:
 ## Role Variables
 ### defaults/main.yml
 <pre><code>
-
+# List of extensions to install
+azure_cli_extensions: []
 </pre></code>
 
 
@@ -53,6 +54,8 @@ Note:
 - name: sample playbook for role 'azure_cli'
   hosts: all
   become: "yes"
+  vars:
+    azure_cli_extensions: [{'name': 'aks-preview'}, {'name': 'ssh', 'system': True}, {'name': 'image-copy-extension', 'version': '0.2.12'}]
   tasks:
     - name: Include role 'azure_cli'
       ansible.builtin.include_role:
