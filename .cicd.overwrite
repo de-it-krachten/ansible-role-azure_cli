@@ -26,3 +26,13 @@ molecule:
       activate_epel: true
       install_python: true
       install_python38: true
+  converge:
+    vars:
+      azure_cli_extensions:
+        - name: aks-preview
+        - name: ssh
+          system: true
+        - name: image-copy-extension
+          version: 0.2.12
+
+  
