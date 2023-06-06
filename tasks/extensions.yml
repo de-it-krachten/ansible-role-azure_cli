@@ -8,9 +8,10 @@
   check_mode: false
   register: __az_installed
 
-- name: Xxx
+- name: Show list of installed extensions
   ansible.builtin.debug:
     msg: "{{ __az_installed.stdout | from_json | json_query('[].name') }}"
+    verbosity: 1
 
 - name: Install azure-cli extensions
   ansible.builtin.command: >-
