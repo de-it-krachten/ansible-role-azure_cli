@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/de-it-krachten/ansible-role-azure_cli/compare/v1.1.0...v1.2.0) (2023-06-06)
+
+
+### Features
+
+* Add support for managing extensions ([fe13fbb](https://github.com/de-it-krachten/ansible-role-azure_cli/commit/fe13fbb00b4a1def7eb1f9ce01995623e5b5318c))
+
 # [1.1.0](https://github.com/de-it-krachten/ansible-role-azure_cli/compare/v1.0.1...v1.1.0) (2023-05-30)
 
 
