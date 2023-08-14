@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/de-it-krachten/ansible-role-azure_cli/compare/v1.2.0...v1.3.0) (2023-08-14)
+
+
+### Bug Fixes
+
+* Fix support for (Open)SUSE ([8f8a480](https://github.com/de-it-krachten/ansible-role-azure_cli/commit/8f8a4801230769d4b80749b0945a9c74fbcd9bda))
+
+
+### Features
+
+* Update supported platforms & CI ([9cb76d8](https://github.com/de-it-krachten/ansible-role-azure_cli/commit/9cb76d8747080d53b68757e9044d09e68c3a9376))
+
 # [1.2.0](https://github.com/de-it-krachten/ansible-role-azure_cli/compare/v1.1.0...v1.2.0) (2023-06-06)
 
 
