@@ -1,0 +1,28 @@
+---
+
+- name: Assertions
+  ansible.builtin.assert:
+    that:
+      - ansible_distribution_major_version | int >= 12
+
+- name: Setup microsoft Zypper repository (OpenSUSE leap)
+  community.general.zypper:
+    name: https://packages.microsoft.com/config/opensuse/{{ ansible_distribution_major_version }}/packages-microsoft-prod.rpm
+    state: present
+    disable_gpg_check: true
+  become: yes
+  when: ansible_distribution == 'openSUSE Leap'
+
+- name: Setup microsoft Zypper repository (SLES)
+  community.general.zypper:
+    name: https://packages.microsoft.com/config/opensuse/{{ ansible_distribution_major_version }}/packages-microsoft-prod.rpm
+    state: present
+    disable_gpg_check: true
+  become: yes
+  when: ansible_distribution == 'SLES'
+
+- name: Install azure-cli
+  community.general.zypper:
+    name: azure-cli
+    state: present
+  become: yes
