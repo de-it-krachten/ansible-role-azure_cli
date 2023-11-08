@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/de-it-krachten/ansible-role-azure_cli/compare/v1.3.0...v1.3.1) (2023-11-08)
+
+
+### Bug Fixes
+
+* Change loop/label for latest ansible ([0f9a939](https://github.com/de-it-krachten/ansible-role-azure_cli/commit/0f9a939454190dd1d7484275b7854e01b8cb9169))
+
 # [1.3.0](https://github.com/de-it-krachten/ansible-role-azure_cli/compare/v1.2.0...v1.3.0) (2023-08-14)
 
 
