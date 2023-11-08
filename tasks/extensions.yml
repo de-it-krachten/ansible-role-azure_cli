@@ -23,6 +23,5 @@
   changed_when: true
   loop: "{{ azure_cli_extensions }}"
   loop_control:
-    label:
-      - "{{ item.name }}"
+    label: "{{ item.name }}"
   when: item.name not in (__az_installed.stdout | from_json | json_query('[].name'))
