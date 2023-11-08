@@ -29,7 +29,6 @@ Supported platforms
 - AlmaLinux 9
 - SUSE Linux Enterprise 15<sup>1</sup>
 - openSUSE Leap 15
-- Debian 10 (Buster)<sup>1</sup>
 - Debian 11 (Bullseye)
 - Debian 12 (Bookworm)
 - Ubuntu 20.04 LTS
@@ -55,9 +54,14 @@ azure_cli_extensions: []
 <pre><code>
 - name: sample playbook for role 'azure_cli'
   hosts: all
-  become: "yes"
+  become: 'yes'
   vars:
-    azure_cli_extensions: [{'name': 'aks-preview'}, {'name': 'ssh', 'system': True}, {'name': 'image-copy-extension', 'version': '0.2.12'}]
+    azure_cli_extensions:
+      - name: aks-preview
+      - name: ssh
+        system: true
+      - name: image-copy-extension
+        version: 0.2.12
   tasks:
     - name: Include role 'azure_cli'
       ansible.builtin.include_role:
