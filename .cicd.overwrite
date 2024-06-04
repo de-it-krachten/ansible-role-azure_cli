@@ -16,6 +16,12 @@ platforms:
   centos7:
     ci: false
     supported: false
+  opensuse15:
+    ci: false
+    supported: false
+  sles15:
+    ci: false
+    supported: false
 
 # Molecule
 molecule:
