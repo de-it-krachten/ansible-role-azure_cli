@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/de-it-krachten/ansible-role-azure_cli/compare/v1.4.0...v1.5.0) (2024-12-29)
+
+
+### Features
+
+* Update supported platforms & CI ([f0cd6eb](https://github.com/de-it-krachten/ansible-role-azure_cli/commit/f0cd6eb1398bb386536a15b6cfec43ccfaff0700))
+
 # [1.4.0](https://github.com/de-it-krachten/ansible-role-azure_cli/compare/v1.3.1...v1.4.0) (2024-06-04)
 
 
