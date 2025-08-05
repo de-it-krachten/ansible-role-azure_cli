@@ -6,9 +6,14 @@
     key: https://packages.microsoft.com/keys/microsoft.asc
   become: yes
 
+- name: Download microsoft repository RPM
+  ansible.builtin.get_url:
+    url: https://packages.microsoft.com/config/fedora/{{ ansible_distribution_major_version }}/packages-microsoft-prod.rpm
+    dest: /tmp/packages-microsoft-prod.rpm
+
 - name: Setup microsoft YUM repository
   ansible.builtin.dnf:
-    name: https://packages.microsoft.com/config/fedora/{{ ansible_distribution_major_version }}/packages-microsoft-prod.rpm
+    name: /tmp/packages-microsoft-prod.rpm
     state: present
   become: yes
 

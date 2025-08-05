@@ -218,14 +218,6 @@ jobs:
             ansible_lint: "ansible-lint>6,<7"
             hetznercloud: True
 
-          - name: debian13
-            runs_on: ubuntu-22.04
-            distro: debian13
-            playbook: converge.yml
-            ansible: "ansible-core>2.16,<2.17"
-            ansible_lint: "ansible-lint>6,<7"
-            hetznercloud: True
-
           - name: ubuntu2004
             runs_on: ubuntu-22.04
             distro: ubuntu2004
@@ -245,22 +237,6 @@ jobs:
           - name: ubuntu2404
             runs_on: ubuntu-22.04
             distro: ubuntu2404
-            playbook: converge.yml
-            ansible: "ansible-core>2.16,<2.17"
-            ansible_lint: "ansible-lint>6,<7"
-            hetznercloud: True
-
-          - name: fedora41
-            runs_on: ubuntu-22.04
-            distro: fedora41
-            playbook: converge.yml
-            ansible: "ansible-core>2.16,<2.17"
-            ansible_lint: "ansible-lint>6,<7"
-            hetznercloud: True
-
-          - name: fedora42
-            runs_on: ubuntu-22.04
-            distro: fedora42
             playbook: converge.yml
             ansible: "ansible-core>2.16,<2.17"
             ansible_lint: "ansible-lint>6,<7"

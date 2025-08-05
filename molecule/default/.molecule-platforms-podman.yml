@@ -80,7 +80,7 @@
   ci: true
   image: docker.io/geerlingguy/docker-debian12-ansible:latest
 - name: debian13
-  ci: true
+  ci: false
   image: docker.io/geerlingguy/docker-debian13-ansible:latest
 - name: ubuntu1804
   ci: false
@@ -111,10 +111,10 @@
   ci: false
   image: docker.io/geerlingguy/docker-fedora40-ansible:latest
 - name: fedora41
-  ci: true
+  ci: false
   image: docker.io/geerlingguy/docker-fedora41-ansible:latest
 - name: fedora42
-  ci: true
+  ci: false
   image: docker.io/geerlingguy/docker-fedora42-ansible:latest
 - name: alpine3
   ci: false

@@ -18,7 +18,6 @@ galaxy_info:
       versions:
         - bullseye
         - bookworm
-        - trixie
     - name: Ubuntu
       versions:
         - focal
