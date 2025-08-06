@@ -15,15 +15,8 @@
   ansible.builtin.dnf:
     name: https://packages.microsoft.com/config/rhel/{{ ansible_distribution_major_version }}/packages-microsoft-prod.rpm
     state: present
+    disable_gpg_check: "{{ 'yes' if ansible_distribution_major_version == '10' else 'no' }}"
   become: yes
-  when: ansible_distribution_major_version == '8'
-
-- name: Setup microsoft YUM repository
-  ansible.builtin.dnf:
-    name: https://packages.microsoft.com/config/rhel/{{ ansible_distribution_major_version }}.0/packages-microsoft-prod.rpm
-    state: present
-  become: yes
-  when: ansible_distribution_major_version == '9'
 
 - name: Install azure-cli
   ansible.builtin.dnf:
