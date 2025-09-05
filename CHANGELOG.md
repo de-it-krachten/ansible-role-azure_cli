@@ -1,3 +1,14 @@
+# [1.6.0](https://github.com/de-it-krachten/ansible-role-azure_cli/compare/v1.5.0...v1.6.0) (2025-09-05)
+
+
+### Features
+
+* Add support for AlmaLinux 10 ([1793881](https://github.com/de-it-krachten/ansible-role-azure_cli/commit/17938819dbc74d7dba4e9fcb43033175239a910c))
+* Add support for Debian 13 (Trixie) ([9feee99](https://github.com/de-it-krachten/ansible-role-azure_cli/commit/9feee999ef54e4402d9df219de3b9d8b71ef4a05))
+* Add support for OracleLinux 10 ([d2efe1e](https://github.com/de-it-krachten/ansible-role-azure_cli/commit/d2efe1e8698c7d4cebf57d9a6d0442481af5dcb0))
+* Add support for Red Hat Enterprise Linux 10 ([d0c2108](https://github.com/de-it-krachten/ansible-role-azure_cli/commit/d0c2108427d41fc27f1de906fe85de183ae07f6e))
+* Add support for RockyLinux 10 ([cc38609](https://github.com/de-it-krachten/ansible-role-azure_cli/commit/cc386095d978c87cf0325eb38c61ea5246b50094))
+
 # [1.6.0](https://github.com/de-it-krachten/ansible-role-azure_cli/compare/v1.5.0...v1.6.0) (2025-08-06)
 
 
