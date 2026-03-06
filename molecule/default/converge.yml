@@ -4,6 +4,7 @@
   hosts: all
   become: "yes"
   vars:
+    molecule_driver: "{{ lookup('env', 'MOLECULE_DRIVER_NAME') }}"
     azure_cli_extensions: [{'name': 'aks-preview'}, {'name': 'ssh', 'system': True}, {'name': 'image-copy-extension', 'version': '0.2.12'}]
   tasks:
     - name: Include role 'ansible-role-azure_cli'
