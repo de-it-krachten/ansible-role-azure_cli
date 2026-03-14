@@ -1,3 +1,11 @@
+# [1.7.0](https://github.com/de-it-krachten/ansible-role-azure_cli/compare/v1.6.0...v1.7.0) (2026-03-14)
+
+
+### Features
+
+* Added support for Fedora 43 ([6a40bc4](https://github.com/de-it-krachten/ansible-role-azure_cli/commit/6a40bc484bff2fab00609b618492d3e62f920de9))
+* Drop support for Fedora 41 ([be76e7b](https://github.com/de-it-krachten/ansible-role-azure_cli/commit/be76e7b057fdc52550fd366f4cc2b406a6b51096))
+
 # [1.6.0](https://github.com/de-it-krachten/ansible-role-azure_cli/compare/v1.5.0...v1.6.0) (2025-09-05)
 
 
