@@ -35,11 +35,12 @@ Supported platforms
 - Debian 12 (Bookworm)
 - Ubuntu 22.04 LTS
 - Ubuntu 24.04 LTS
-- Fedora 41<sup>1</sup>
 - Fedora 42<sup>1</sup>
+- Fedora 43<sup>1</sup>
 
 Note:
 <sup>1</sup> : no automated testing is performed on these platforms
+
 
 ## Role Variables
 ### defaults/main.yml
@@ -58,6 +59,7 @@ azure_cli_extensions: []
   hosts: all
   become: 'yes'
   vars:
+    molecule_driver: '{{ lookup(''env'', ''MOLECULE_DRIVER_NAME'') }}'
     azure_cli_extensions:
       - name: aks-preview
       - name: ssh
