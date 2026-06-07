@@ -4,8 +4,8 @@
   ansible.builtin.include_tasks:
     file: "{{ item }}"
   with_first_found:
-    - "{{ ansible_distribution }}.yml"
-    - "family-{{ ansible_os_family }}.yml"
+    - "{{ ansible_facts.distribution }}.yml"
+    - "family-{{ ansible_facts.os_family }}.yml"
 
 - name: Install extensions
   ansible.builtin.include_tasks:
