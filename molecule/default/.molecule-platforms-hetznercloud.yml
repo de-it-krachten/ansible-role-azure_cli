@@ -61,7 +61,7 @@
   server_type: cx23
   image: ubuntu-24.04
 - name: ubuntu2604
-  ci: true
+  ci: false
   server_type: cx23
   image: ubuntu-26.04
 - name: fedora37

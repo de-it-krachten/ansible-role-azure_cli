@@ -102,7 +102,7 @@
   ci: true
   image: docker.io/geerlingguy/docker-ubuntu2404-ansible:latest
 - name: ubuntu2604
-  ci: true
+  ci: false
   image: docker.io/geerlingguy/docker-ubuntu2604-ansible:latest
 - name: fedora37
   ci: false

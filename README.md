@@ -35,7 +35,6 @@ Supported platforms
 - Debian 12 (Bookworm)
 - Ubuntu 22.04 LTS
 - Ubuntu 24.04 LTS
-- Ubuntu 26.04 LTS
 - Fedora 43<sup>1</sup>
 - Fedora 44<sup>1</sup>
 

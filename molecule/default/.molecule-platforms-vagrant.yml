@@ -99,7 +99,7 @@
   box: generic/ubuntu2404
   interfaces: [{'network_name': 'private_network', 'type': 'dhcp'}]
 - name: ubuntu2604
-  ci: true
+  ci: false
   box: generic/ubuntu2604
   interfaces: [{'network_name': 'private_network', 'type': 'dhcp'}]
 - name: fedora37
