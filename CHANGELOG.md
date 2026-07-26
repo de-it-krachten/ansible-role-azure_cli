@@ -1,3 +1,14 @@
+# [1.8.0](https://github.com/de-it-krachten/ansible-role-azure_cli/compare/v1.7.0...v1.8.0) (2026-07-26)
+
+
+### Features
+
+* Add support for ansible-core 2.20+ ([b88155a](https://github.com/de-it-krachten/ansible-role-azure_cli/commit/b88155ab3f2770c8cdfc8ddaa19c900f31e2ef38))
+* Added support for Fedora 44 ([5164a45](https://github.com/de-it-krachten/ansible-role-azure_cli/commit/5164a45ed1c5150d9b74f07fa7669bf65c007624))
+* Added support for Ubuntu 26.04 LTS ([b40fab4](https://github.com/de-it-krachten/ansible-role-azure_cli/commit/b40fab4b0adedf94f76d4dcb5f6465dbf2cffb4a))
+* Added support for Ubuntu 26.04 LTS ([eaa6ccf](https://github.com/de-it-krachten/ansible-role-azure_cli/commit/eaa6ccfa95857d9f8974d246522507b207772702))
+* Drop support for Fedora 42 ([eca04a3](https://github.com/de-it-krachten/ansible-role-azure_cli/commit/eca04a37766dd0b6b547e2d503b6de6ffd51d093))
+
 # [1.7.0](https://github.com/de-it-krachten/ansible-role-azure_cli/compare/v1.6.0...v1.7.0) (2026-03-14)
 
 
