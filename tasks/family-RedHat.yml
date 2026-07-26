@@ -3,7 +3,7 @@
 - name: Assertions
   ansible.builtin.assert:
     that:
-      - ansible_distribution_major_version | int >= 8
+      - ansible_facts.distribution_major_version | int >= 8
 
 - name: Import Microsoft GPG key
   ansible.builtin.rpm_key:
@@ -13,9 +13,9 @@
 
 - name: Setup microsoft YUM repository
   ansible.builtin.dnf:
-    name: https://packages.microsoft.com/config/rhel/{{ ansible_distribution_major_version }}/packages-microsoft-prod.rpm
+    name: https://packages.microsoft.com/config/rhel/{{ ansible_facts.distribution_major_version }}/packages-microsoft-prod.rpm
     state: present
-    disable_gpg_check: "{{ 'yes' if ansible_distribution_major_version == '10' else 'no' }}"
+    disable_gpg_check: "{{ 'yes' if ansible_facts.distribution_major_version == '10' else 'no' }}"
   become: yes
 
 - name: Install azure-cli
