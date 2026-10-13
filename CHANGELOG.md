@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/de-it-krachten/ansible-role-azure_cli/compare/v1.8.0...v1.9.0) (2026-10-13)
+
+
+### Features
+
+* Drop support for Debian 11 (Bullseye) ([5b656b0](https://github.com/de-it-krachten/ansible-role-azure_cli/commit/5b656b0433d53f03bc097c0afe79d42777fec676))
+
 # [1.8.0](https://github.com/de-it-krachten/ansible-role-azure_cli/compare/v1.7.0...v1.8.0) (2026-07-26)
 
 
